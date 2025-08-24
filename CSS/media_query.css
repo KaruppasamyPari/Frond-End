@@ -1,0 +1,26 @@
+body{
+    background-color: aqua;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+
+.hello{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid black;
+    margin: auto;
+
+}
+@media (max-width: 800px) {
+    .mee{
+        background-color: black;
+        color: white;
+    }
+    
+}

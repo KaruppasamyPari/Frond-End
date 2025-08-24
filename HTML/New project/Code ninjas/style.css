@@ -1,0 +1,44 @@
+*{
+    background-color:#0298f5;
+    color:rgb(0, 0, 0);
+}
+.container{
+    text-align:center;
+}
+.content {
+    display:flex ; 
+    gap:20px;
+    
+}
+.image p{
+    font-style: italic;
+    text-align: center;
+}
+.image img{
+    border-radius:30px;
+}
+.table{
+    display : flex;
+    justify-content:center;
+}
+.link{text-align: center;
+}
+.rating{
+    text-align:center;
+}
+.footer{
+    text-align:center;
+}
+.review form{
+    display:flex;
+    justify-content:center;
+}
+.review h3{
+    text-align:center;
+}
+.button{
+    text-align:center;
+}
+    
+
+

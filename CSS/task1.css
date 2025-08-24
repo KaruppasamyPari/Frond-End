@@ -1,0 +1,47 @@
+.pari{
+    background-color: red;
+    width: 15%;
+    display: inline;
+    color: white;
+    padding: 2px;
+    margin-right: 20px;
+}
+.karuppasamy{
+    background-color: blue;
+    width: 15%;
+    display: inline;
+    color: white;
+    padding: 2px;
+}
+span {;
+  background-color: yellow;
+  width: 100px;
+  height: 50px;
+}
+.link {
+    display: block;
+    width: 200px; 
+    height: 50px;
+    background-color: green; ;
+}
+.menu li {
+  display: inline;
+  margin-right: 10px;
+  padding: 10px;
+  background: #ccc;
+  height: 400px;
+  width: 200px;
+}
+
+.five img{
+    display: inline-block;
+    width: 200PX;
+    vertical-align: middle;
+    
+}
+
+.five p{
+display: inline-block;
+width:70%;
+vertical-align: middle;
+}

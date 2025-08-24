@@ -1,0 +1,32 @@
+.main{
+    display: flex;
+    color: white;
+    width: 600px;
+    background-color: black;
+    border: 1px solid black;
+    text-align: center;
+    border-radius:15px ; 
+    padding: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.header{
+    display: flex;
+    gap: 20px;
+}
+.w1{
+     
+    color: white;
+    width: 200px;
+    background-color: rgb(175, 23, 23);
+    border: 1px solid rgb(0, 82, 118);
+    text-align: center;
+    border-radius:8px ; 
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+}
+
+}

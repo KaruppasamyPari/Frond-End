@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Coolie Movie Ticket Booking</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(120deg, #000000, #1f1f1f);
+      color: white;
+    }
+
+    header {
+      text-align: center;
+      padding: 20px;
+      background: #e50914;
+      color: #fff;
+      font-size: 2em;
+      font-weight: bold;
+      letter-spacing: 2px;
+    }
+
+    .container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      padding: 30px;
+    }
+
+    .poster {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+    }
+
+    .poster img {
+      max-width: 100%;
+      border-radius: 15px;
+      box-shadow: 0 0 15px #e50914;
+    }
+
+    .form-section {
+      flex: 1;
+      min-width: 300px;
+      padding: 20px;
+      background: #262626;
+      border-radius: 15px;
+      box-shadow: 0 0 10px #e50914;
+    }
+
+    .form-section h2 {
+      margin-top: 0;
+      color: #e50914;
+    }
+
+    input, select {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0 20px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+    }
+
+    button {
+      width: 100%;
+      padding: 12px;
+      background: #e50914;
+      color: white;
+      font-size: 1.1em;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #b00610;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background: #111;
+      font-size: 0.9em;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+
+  <header>Coolie Movie Ticket Booking</header>
+
+  <div class="container">
+    <div class="poster">
+      <img src="coolie.jpg" alt="Coolie Movie Poster">
+    </div>
+
+    <div class="form-section">
+      <h2>Book Your Tickets</h2>
+      <form>
+        <label>Name:</label>
+        <input type="text" placeholder="Your Name" required>
+
+        <label>Number of Tickets:</label>
+        <input type="number" min="1" max="10" required>
+
+        <label>Date:</label>
+        <input type="date" required>
+
+        <label>Show Time:</label>
+        <select required>
+          <option value="">Select Time</option>
+          <option>10:00 AM</option>
+          <option>1:30 PM</option>
+          <option>4:30 PM</option>
+          <option>7:00 PM</option>
+          <option>10:00 PM</option>
+        </select>
+
+        <label>Seat Type:</label>
+        <select required>
+          <option value="">Select Type</option>
+          <option>Regular</option>
+          <option>Premium</option>
+          <option>VIP</option>
+        </select>
+
+        <button type="submit">Book Now</button>
+      </form>
+    </div>
+  </div>
+
+  <footer>
+    © 2025 Coolie Movie Booking Portal. All rights reserved.
+  </footer>
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+body{
+    background-color: black;
+    padding: 5px;
+}
+.main{
+    display: flex;
+    justify-content: space-between; 
+}
+.dummy{
+    position: sticky;
+    top: 0px;
+    background-color: black;
+}
+.ric img{
+    margin-left: 350px;
+}
+.col{
+    color: white;
+    font-size: 20px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+.para{
+    color: azure;
+    text-align: justify;
+    font-size: 20px;
+}
+.product{
+    color: white;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+    align-items: center;
+}
+.w1{
+   
+    color: rgb(255, 255, 255);
+    width: 360px;
+    padding: 30px;
+    border: 1px solid black;
+    text-align: center;
+    border-radius:8px ; 
+}
+.footer{
+  
+    display: flex;
+    color: white;
+    justify-content: space-between;
+}
+
+.social a{
+    color: white;
+    text-decoration: none;
+}
+
+.rm{
+    color: white;
+    display: flex;
+    padding: 10px;
+   
+}
+.rm1{
+    background-color: white;
+    color: black;
+    display: flex;   
+    padding: 10px;
+}
+.rm2 h2{
+    font-size: 50px;
+}
+.rm2 p{
+    font-size: 25px;
+    width: 500px;
+}
+

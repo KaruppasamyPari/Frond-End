@@ -1,0 +1,103 @@
+*{
+     border: 0px;
+    margin: 0px;
+    
+}
+.container{
+    width: 250px;
+    background-color: grey;
+    position: fixed;
+    display: grid;
+    padding: 10px;
+    height: 100vh;
+}
+.container a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.container a:hover{
+    background-color: black;
+    color: white;
+}
+.watch{
+    margin-left: 260px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    height: 100%;
+}
+.img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+.text{
+    margin-top: 50px;
+    text-align: center;
+}
+.watch1{
+    margin-left: 260px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    height: 100%;
+}
+.text1{
+    margin-top: 50px;
+    text-align: center;
+    margin-top: 0px;
+}
+.watch2{
+    margin-left: 260px;
+    background-color: rgb(0, 0, 0);
+    color: white;
+    padding: 20px;
+    height: 100%;
+    
+}
+.img2{
+    display: flex;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    margin-top: 75px;
+}
+.text2{
+    margin-top: 0px;
+    text-align: center;
+}
+.vc{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    margin-left: 300px;
+    height: 100vh;
+    text-align: center;
+}
+.bl{
+    background-color: rgb(0, 0, 0);
+}
+.www{
+    display: flex;
+    flex-wrap: wrap;
+}
+.mk{
+    width: 400px;
+}
+.contact{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    height: 100vh;
+    text-align: center;
+    margin-left: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lk{
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
