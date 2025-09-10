@@ -1,0 +1,274 @@
+<!-- save as f1-clone-template.html -->
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>F1 — Bootstrap Template</title>
+
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    /* Small custom styles to mimic F1 feel */
+    :root {
+      --f1-red: #e10600;
+      --f1-dark: #0b0b0b;
+      --f1-gray: #f5f5f5;
+    }
+    body { background: white; color: #111; }
+    .navbar-brand { font-weight:700; letter-spacing: 1px; }
+    .hero {
+      background-image: url('https://picsum.photos/id/1011/1600/700');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      min-height: 420px;
+      display:flex;
+      align-items:center;
+    }
+    .hero-overlay { background: rgba(0,0,0,0.45); padding: 48px; border-radius: 8px; }
+    .driver-flag { width:28px; height:auto; border-radius:3px; }
+    .partner-logo { max-height:48px; opacity: .95; }
+    .news-card img { height:160px; object-fit:cover; }
+    footer { background: var(--f1-dark); color: #ddd; padding:32px 0; }
+    .standings-table th, .standings-table td { vertical-align: middle; }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm sticky-top">
+  <div class="container">
+    <a class="navbar-brand text-dark" href="#">F1<span class="text-danger">.</span></a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="mainNav">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Schedule</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Drivers</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">Teams</a></li>
+        <li class="nav-item"><a class="nav-link" href="#">News</a></li>
+      </ul>
+
+      <div class="d-flex align-items-center gap-2">
+        <a class="btn btn-outline-secondary btn-sm" href="#">Sign in</a>
+        <a class="btn btn-danger btn-sm" href="#">Subscribe</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero text-white">
+  <div class="container">
+    <div class="hero-overlay">
+      <h1 class="display-5 fw-bold">Race Weekend: Zandvoort — Live Coverage</h1>
+      <p class="lead">Latest updates, video highlights, and timings — all in one place.</p>
+      <div class="mt-3">
+        <a class="btn btn-danger btn-lg me-2" href="#">Live Timing</a>
+        <a class="btn btn-outline-light btn-lg" href="#">Full Schedule</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- MAIN GRID -->
+<main class="py-5">
+  <div class="container">
+
+    <!-- Top row: Latest news (cards) + Standings -->
+    <div class="row g-4">
+
+      <!-- Latest news -->
+      <div class="col-lg-8">
+        <div class="d-flex align-items-center justify-content-between mb-3">
+          <h4 class="mb-0">Latest News</h4>
+          <small class="text-muted">View all</small>
+        </div>
+
+        <div class="row g-3">
+          <!-- News card 1 -->
+          <div class="col-md-6">
+            <div class="card news-card shadow-sm">
+              <img src="https://picsum.photos/seed/f1news1/800/450" class="card-img-top" alt="news">
+              <div class="card-body">
+                <h5 class="card-title">Race day preview: what to expect</h5>
+                <p class="card-text small text-muted">Short summary line that previews the story — replace with real copy.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- News card 2 -->
+          <div class="col-md-6">
+            <div class="card news-card shadow-sm">
+              <img src="https://picsum.photos/seed/f1news2/800/450" class="card-img-top" alt="news">
+              <div class="card-body">
+                <h5 class="card-title">Technical insight: tyres & strategy</h5>
+                <p class="card-text small text-muted">Quick technical breakdown — swap with your desired content.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- News card 3 -->
+          <div class="col-md-6">
+            <div class="card news-card shadow-sm">
+              <img src="https://picsum.photos/seed/f1news3/800/450" class="card-img-top" alt="news">
+              <div class="card-body">
+                <h5 class="card-title">Interview: driver reacts to qualifying</h5>
+                <p class="card-text small text-muted">A short excerpt from the interview.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+          <!-- News card 4 -->
+          <div class="col-md-6">
+            <div class="card news-card shadow-sm">
+              <img src="https://picsum.photos/seed/f1news4/800/450" class="card-img-top" alt="news">
+              <div class="card-body">
+                <h5 class="card-title">Feature: best moments from the season</h5>
+                <p class="card-text small text-muted">Highlight reel summary — replace as needed.</p>
+                <a href="#" class="stretched-link"></a>
+              </div>
+            </div>
+          </div>
+
+        </div> <!-- row -->
+      </div> <!-- col-lg-8 -->
+
+      <!-- Standings / quick info -->
+      <aside class="col-lg-4">
+        <div class="card shadow-sm mb-4">
+          <div class="card-body">
+            <h6 class="card-title">2025 Driver Standings</h6>
+            <table class="table table-borderless table-sm standings-table mb-0">
+              <thead>
+                <tr><th>Pos</th><th>Driver</th><th class="text-end">Pts</th></tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Oscar Piastri <small class="text-muted d-block">McLaren</small></td>
+                  <td class="text-end fw-bold">284</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Lando Norris <small class="text-muted d-block">McLaren</small></td>
+                  <td class="text-end fw-bold">275</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Max Verstappen <small class="text-muted d-block">Red Bull</small></td>
+                  <td class="text-end fw-bold">187</td>
+                </tr>
+              </tbody>
+            </table>
+            <div class="mt-3 d-grid">
+              <a href="#" class="btn btn-outline-secondary btn-sm">View full standings</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card shadow-sm">
+          <div class="card-body">
+            <h6 class="card-title">Upcoming Round</h6>
+            <p class="mb-1"><strong>Italy — Monza</strong></p>
+            <p class="small text-muted">05 - 07 Sep • Practice, Qualifying, Race</p>
+            <a href="#" class="btn btn-danger btn-sm w-100">See schedule</a>
+          </div>
+        </div>
+      </aside>
+
+    </div> <!-- row -->
+
+    <!-- Partners -->
+    <section class="mt-5">
+      <h5>Our Partners</h5>
+      <div class="d-flex flex-wrap align-items-center gap-4 mt-3">
+        <img src="https://picsum.photos/seed/partner1/200/60" class="partner-logo" alt="partner">
+        <img src="https://picsum.photos/seed/partner2/200/60" class="partner-logo" alt="partner">
+        <img src="https://picsum.photos/seed/partner3/200/60" class="partner-logo" alt="partner">
+        <img src="https://picsum.photos/seed/partner4/200/60" class="partner-logo" alt="partner">
+        <img src="https://picsum.photos/seed/partner5/200/60" class="partner-logo" alt="partner">
+      </div>
+    </section>
+
+    <!-- Video / Featured -->
+    <section class="mt-5">
+      <div class="row g-3">
+        <div class="col-lg-8">
+          <div class="card shadow-sm">
+            <div class="ratio ratio-16x9">
+              <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="video" allowfullscreen></iframe>
+            </div>
+            <div class="card-body">
+              <h5 class="card-title">Featured Video: Highlights</h5>
+              <p class="small text-muted">Watch the latest highlights and interviews from the paddock.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-4">
+          <div class="card shadow-sm p-3">
+            <h6>Subscribe to F1 Newsletter</h6>
+            <p class="small text-muted">Get the latest news and exclusives.</p>
+            <form>
+              <div class="mb-2">
+                <input class="form-control form-control-sm" placeholder="Email address">
+              </div>
+              <div class="d-grid">
+                <button class="btn btn-danger btn-sm">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div> <!-- container -->
+</main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="row gy-3">
+      <div class="col-md-4">
+        <h5 class="text-white">F1</h5>
+        <p class="small text-muted">Official fan site template — replace with real links & content.</p>
+      </div>
+      <div class="col-md-2">
+        <h6 class="text-white small">Explore</h6>
+        <ul class="list-unstyled small">
+          <li><a class="link-light" href="#">Schedule</a></li>
+          <li><a class="link-light" href="#">Results</a></li>
+          <li><a class="link-light" href="#">Drivers</a></li>
+        </ul>
+      </div>
+      <div class="col-md-3">
+        <h6 class="text-white small">Partners</h6>
+        <div class="d-flex gap-2 flex-wrap">
+          <img src="https://picsum.photos/seed/partnerA/100/40" alt="p" class="partner-logo">
+          <img src="https://picsum.photos/seed/partnerB/100/40" alt="p" class="partner-logo">
+        </div>
+      </div>
+      <div class="col-md-3 text-md-end">
+        <p class="small mb-1">© 2025 Example Template</p>
+        <div>
+          <a class="link-light me-2" href="#">Privacy</a>
+          <a class="link-light" href="#">Terms</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- Bootstrap JS bundle -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
