@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Phone Number Validation</title>
+</head>
+
+<script>
+    function validateForm() {
+        var email = document.myform.email.value;
+        // Simple email validation pattern
+        var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (email == null || email == "") {
+            alert('Email cannot be blank');
+            return false;
+        }
+        if (!emailPattern.test(email)) {
+            alert('Please enter a valid email address');
+            return false;
+        }
+        return true;
+    }
+</script>
+
+<body>
+    <form name='myform' method='post' action="abc.php" onsubmit="return validateForm();">
+        EMAIL: <input type="text" name="email"> <br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
