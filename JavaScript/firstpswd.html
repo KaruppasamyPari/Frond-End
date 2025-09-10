@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<script>
+    function password(){
+        var firstpassword = document.myform.pswd.value;
+        var secondpassword = document.myform.cpswd.value;
+        if(firstpassword != secondpassword){
+            alert('password not match');
+            return false;
+        }
+        if(firstpassword == secondpassword){
+            alert('password match');
+            return true;
+        }
+    }
+</script>
+<body>
+   <form name='myform' method='post' action="abc.php" onsubmit="return password();">
+        <label for="pswd">PASSWORD 1:</label>
+        <input type="password" id="pswd" name="pswd" title="Enter password" placeholder="Enter password"> <br><br>
+        <label for="cpswd">PASSWORD 2:</label>
+        <input type="password" id="cpswd" name="cpswd" title="Confirm password" placeholder="Confirm password"> <br><br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>
