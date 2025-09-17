@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Product Cart</title>
+</head>
+<body>
+  <h2> Product Cart</h2>
+  <button onclick="startCart()">Add Products</button>
+
+  <h3>Products:</h3>
+  <ul id="productList"></ul>
+
+  <h3>Total Price: ₹<span id="totalPrice">0</span></h3>
+
+  <script>
+    function startCart() {
+      let totalPrice = 0;
+      let productList = document.getElementById("productList");
+      productList.innerHTML = ""; // Clear old products
+
+      while (true) {
+        let productName = prompt("Enter product name (type 'stop' to finish):");
+        if (productName === null || productName.toLowerCase() === "stop") {
+          break;
+        }
+
+        let price = prompt("Enter price for " + productName + ":");
+        price = Number(price);
+
+        if (isNaN(price)) {
+          alert("Invalid price! Please enter a number.");
+          continue;
+        }
+
+        // Add product to list
+        let li = document.createElement("li");
+        li.textContent = productName + " - ₹" + price;
+        productList.appendChild(li);
+
+        totalPrice += price;
+      }
+
+      document.getElementById("totalPrice").textContent = totalPrice;
+    }
+  </script>
+</body>
+</html>

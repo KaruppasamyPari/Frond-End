@@ -1,0 +1,85 @@
+<!--
+DOM:- (Document Object Model)
+
+document: file html, xml  XML- Extrace markeup lauage
+objects: tags, elements
+model: Layout structure html,xml structure
+DOM is the platform and lauguage neutral interface 
+that allows program
+and script to dynamicaly access and update the cotent,structure and style of the document
+
+DOM separated in 3 type :-
+core DOM :- standard model for all html document types
+Xml DOM :- standard model for xml document
+html DOM :- standard model for html document
+
+interface to access content manipulate conent dynamically
+html DOM ?
+html code will be coverted into objects
+
+const person={
+name: 'harun',
+age: 35
+city:'cheenai'
+}
+
+it defines:
+ html elemnts as object 
+ properties of all html elements
+ Methods to access all html element / actions
+ events for all html elements
+ 
+ in other word the html dom is sstandard for how to get,chage,add, or delete html document.
+
+JS vassu Style :-
+element.styleColour 
+-->
+
+
+<!--
+CHAT GPT:-
+      DOM = Document Object Model
+      
+      Simple ah sonna, ஒரு web page (HTML document) ah JavaScript tree structure
+      மாதிரி பார்த்துக்கிட்டு control பண்ண use ஆகுற concept thaan DOM.
+      HTML page load aana udane → Browser அதைப் DOM tree ஆக convert பண்ணும்.
+      அந்த tree structureல:
+      Document (root)
+      Elements (HTML tags like <p>, <div>, <h1>)
+      Attributes (id, class, etc.)   
+      Text (content inside tags)
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="demo"> Hello JavaScript</h1>
+    <p id="bhuvi">Array</p>
+</body>
+<script>
+    let message ='hello java script'
+    document.getElementById('demo').innerHTML=message;
+ //                  (or)
+ // message.innerHTML='First dom element
+
+ // let vanthu key word 
+ // document vanthu Intha full Html mean pannuthu
+ // get vanthu namme ena athuku function kudukuratha mean pannum
+ // ElementById vanthu namma ena id design panna poramo atha mean pannathu  
+
+ let element=document.getElementById('bhuvi')
+ console.log(element.textconent)
+      element.textContent +=  ' add me to Javasricpt page'
+ // += epati mean pannuthu apatina 
+ // For Example:- a= 5; 
+ // a +=10 ans willbe 15 ; Reson a name oru value store akiruku athoda engtha 10 add pannurathukuthan +=10 mean pannurum    
+
+
+
+</script>
+</html>

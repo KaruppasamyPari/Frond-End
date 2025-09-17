@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <center>
+    <form name='myForm' method='post' id="myForm">
+        NAME:<input type="text" name="name"> <br><br>
+        PASSWORD:<input type="password" name="password"> <br><br>
+        <input type="submit" value="submit">
+    </form><br><br>
+
+    <button id="myButton" type="submit" value="submit">submit</button>
+
+<script>
+    document.getElementById("myForm").onsubmit = function() {
+        alert("Form submitted!");
+    }
+    document.getElementById("myButton").onclick = function() {
+        alert("Button clicked!");
+    }
+</script>
+   </center><br><br><br>
+
+
+<!-- 7. validate a password length must be above 9 characters -->
+
+Password: <input type="password" id="pwd" name="pwd">
+<button onclick="validatePassword()"> Password</button>
+<script>
+function validatePassword() {
+    var pwd = document.getElementById("pwd").value;
+    if (pwd.length > 9) {
+        alert("Password is valid.");
+    } else {
+        alert("Password must be more than 9 characters.");
+    }
+}
+</script>
+
+
+</body>
+</html>

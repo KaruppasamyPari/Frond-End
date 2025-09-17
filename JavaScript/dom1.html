@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Top 5 IT Companies</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: hsl(0, 0%, 0%);
+            margin: 0;
+            padding: 40px;
+            
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+            color: #333;
+        }
+        #container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+            width: 500px;
+            background-color: gray;
+            padding: 20px;
+            align-items: center;
+            
+        }
+        .company-box {
+            background: #fff;
+            border: 2px solid #0078d7;
+            border-radius: 10px;
+            width: 180px;
+            height: 100px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.1em;
+            color: #0078d7;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+            transition: background 0.3s, color 0.3s, transform 0.3s;
+            cursor: pointer;
+        }
+        .company-box:hover {
+            background: #0078d7;
+            color: #fff;
+            transform: translateY(-8px) scale(1.05);
+        }
+        .company-container {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+    </style>
+</head>
+<body>
+    <center>
+     <div id="container">
+        <h1 style="color: black;">Top 5 IT Companies</h1>
+     <div class="company-container">
+        <div class="company-box">Microsoft</div>
+        <div class="company-box">Apple</div>
+        <div class="company-box">Google</div>
+        <div class="company-box">Amazon</div>
+        <div class="company-box">IBM</div>
+        </div>
+    </div>
+    </center><br><br>
+    <center>
+     <div id="container">
+        <h1 style="color: black;">Top 5 IT Companies</h1>
+     <div class="company-container">
+        <div class="company-box">Microsoft</div>
+        <div class="company-box">Apple</div>
+        <div class="company-box">Google</div>
+        <div class="company-box">Amazon</div>
+        <div class="company-box">IBM</div>
+        </div>
+    </div>
+    </center>
+    <script>
+
+        const title=document.getElementById("container");
+        console.log(title);
+
+        const title1=document.getElementsByClassName("company-container");
+        console.log(title1);
+
+        const title2=document.getElementsByTagName("h1");
+        console.log(title2);
+
+        //  a query selector means returns the matches that style.
+
+        const title3=document.querySelector("div");
+        console.log(title3);
+
+        const title4=document.querySelectorAll("div");
+        console.log(title4);
+
+    </script>
+</body>
+</html>
+

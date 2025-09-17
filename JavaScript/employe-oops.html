@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        class employee {
+
+            constructor(id, name, city,position) {
+                this.id = id;
+                this.name = name;
+                this.city = city;
+                this.position = position;
+            }
+            display() {
+                document.write("my empid:" + " " + this.id + " " + "my empname:" + " " + this.name + " " + "my empcity:" + " " + this.city + " " + "my empemail:" + " " + this.position + "<br>");
+            }
+        }
+
+        var obj1 = new employee(100, 'Pari', 'Rjpm', 'founder');
+        var obj2 = new employee(101, 'Vijay', 'Cbe', 'manager');
+        var obj3 = new employee(102, 'Pandi', 'Chennai', 'developer');
+        var obj4 = new employee(103, 'Prathap', 'Madurai', 'hr');
+
+        obj1.display()
+        obj2.display()
+        obj3.display()
+        obj4.display()
+
+        </script>
+</html>

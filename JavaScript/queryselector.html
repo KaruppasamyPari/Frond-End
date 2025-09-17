@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Query selector</h1>
+    <p>paragraph one</p>
+    <p>paragraph two</p>
+    <p>paragraph three</p>
+
+    <script>
+        document.querySelector("p").style.backgroundColor="red";
+
+
+        const listItems=document.querySelectorAll("p");
+        for(let i=0;i<listItems.length;i++){
+            listItems[i].style.backgroundColor="black";
+        }
+        console.log(listItems);
+        
+    </script>
+    
+</body>
+</html>
