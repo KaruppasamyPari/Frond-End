@@ -1,0 +1,90 @@
+<!-- //      Array:
+//     collections of hetrogeneous element values:
+//     araay will be declared in [] square brackets
+//     we can access array values with the help of index position 0.
+//     araay supports both hetrogeneous and homogeneous  datatype values
+//     declaration of array:
+//     const array=[];
+//     or 
+//     const= new arrayname();
+    
+//     const numbers=['one',15.0,45] 
+//     number[1]  -->
+
+
+<script>
+    let name=['john', 'doe', 'smith', 'jane'];
+    alert(name.length-1);
+    alert(name[name.length-1]);
+</script>
+
+<!-- 
+Array methods:
+
+push appends an element to the end.
+let fruits = ["Banana", "Orange", "Apple", "Mango"];
+alert(fruits.push("Kiwi"));
+alert(fruits);
+
+unshift get an elements from the beginning. 
+let fruits2 = ["Banana", "Orange", "Apple", "Mango"];
+alert(fruits2.unshift());
+alert(fruits2);
+
+push add an element to the end.
+pop takes an elements from the end.
+let fruits3 = ["Banana", "Orange", "Apple", "Mango"];
+alert(fruits3.pop());
+alert(fruits3);
+
+shift takes an element from the beginning.
+let fruits4 = ["Banana", "Orange", "Apple", "Mango"];
+alert(fruits4.shift());
+alert(fruits4); -->
+
+
+<script>
+const users=[
+    {
+        id:5,
+        name:'Pari',
+        age:25
+    },
+    {
+        id:6,
+        name:'Vijay',
+        age:30
+    },
+    {
+        id:7,
+        name:'smith',
+        age:35
+    },
+    {
+        id:8,
+        name:'john',
+        age:40
+    }
+    ]
+
+    console.log(users[2].name);
+    console.log(users[0].age);
+    console.log(users[1].id);
+    console.log(users[3].name);
+</script>
+
+<!-- mixed datatype values -->
+<script>
+    let nos=[10, 'john', 20, 'doe', 30, 'smith', 40, 'jane', 50, 'paris', 60, [1,2,3,4,5]];
+    console.log(nos[11][3]);
+    console.log(nos[1]);
+    console.log(nos[9]);
+
+    let table=[ [1,2,3],[4,5,6],[7,8,9] ];
+    console.log(table[1][2]);
+    console.log(table[0][0]);
+    console.log(table[2][1]);
+</script>
+
+
+

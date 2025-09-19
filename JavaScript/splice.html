@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Splice</title>
+</head>
+<body>
+    <script>
+         const months = ['Jan', 'March', 'April', 'June', 'July', 'Aug'];
+         const removedmonths = months.splice(1,2);
+        console.log(months);
+        console.log(removedmonths);
+    </script>
+
+    <script>
+        const color=['red', 'green', 'blue', 'yellow', 'black'];
+        color.splice(1,0,'white','pink');
+        console.log(color);
+    </script>
+
+    <!-- Slice -->
+    <!-- partition -->
+
+    <script>
+        const colors=['red', 'green', 'blue', 'yellow', 'black','purple'];
+        const slicedColors = colors.slice(1,4);  //n-1 time last value will get omitted
+        console.log(slicedColors);
+    </script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,99 @@
+<!-- create a simple button when clicked changes the bg color of body element to any color
+build a form with a input filed and a button when clicked display the value enter the input filed with a new div element of the page 
+develop a  simple calculater interface that take 2 numbers and an operator and display the result when calculator button is clicked -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #operator {
+            width: 50px;
+        }
+    </style>
+</head>
+<body>
+     <!-- Q.no: 1 -->
+
+    <button class="btn" style="background-color: black; color: white;">Click me to change the color</button>
+
+    <script>
+        document.getElementsByClassName("btn")[0].addEventListener("click", function() {
+            
+            const randomColor = "#" + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+            document.body.style.backgroundColor = randomColor;
+        });
+    </script><br><br>
+
+    <!-- Q.no: 2 -->
+
+    <form id="myForm">
+        <input type="text" id="myInput" placeholder="Enter something">
+        <button type="submit" style="background-color: black; color: white;">Submit</button>
+    </form>
+    <div id="displayArea"></div>
+    <script>
+        document.getElementById("myForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var inputValue = document.getElementById("myInput").value;
+            var newDiv = document.createElement("div");
+            newDiv.textContent = inputValue;
+            document.getElementById("displayArea").appendChild(newDiv);
+            document.getElementById("myInput").value = "";
+
+            document.getElementById("displayArea").style.color = "red";
+            document.getElementById("displayArea").style.fontSize = "20px";
+            document.getElementById("displayArea").style.fontWeight = "bold";
+        });
+    </script><br><br>
+
+    <!-- Q.no: 3 -->
+    <form id="calcForm">
+        <input type="number" id="num1" placeholder="First Number" required>
+        <input type="number" id="num2" placeholder="Second Number" required>
+        <select id="operator" required>
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="*">*</option>
+            <option value="/">/</option>
+        </select>
+        <button type="submit" style="background-color: black; color: white;">Calculate</button>
+    </form>
+    <div id="resultArea"></div>
+    <script>
+        document.getElementById("calcForm").addEventListener("submit", function(event) {
+            event.preventDefault();
+            var num1 = parseFloat(document.getElementById("num1").value);
+            var num2 = parseFloat(document.getElementById("num2").value);
+            var operator = document.getElementById("operator").value;
+            var result;
+
+            switch(operator) {
+                case "+":
+                    result = num1 + num2;
+                    break;
+                case "-":
+                    result = num1 - num2;
+                    break;
+                case "*":
+                    result = num1 * num2;
+                    break;
+                case "/":
+                    result = num1 / num2;
+                    break;
+                default:
+                    result = "Invalid operator";
+            }
+
+            document.getElementById("resultArea").textContent = "Result: " + result;
+        });
+    </script>
+
+
+
+
+</body>
+</html>
