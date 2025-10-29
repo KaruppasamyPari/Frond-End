@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+.highlight { background-color: yellow; }
+.liked { color: red; }
+</style>
+</head>
+<body>
+
+<h3 id="text">Toggle this text</h3>
+<button onclick="toggleClass()">Toggle Class</button>
+<br><br>
+
+<button id="alertBtn" onclick="showAlert()">Show Alert</button>
+<br><br>
+
+<button id="likeBtn" onclick="likePost()">Like (<span id="likeCount">0</span>)</button>
+
+<script>
+function toggleClass() {
+  document.getElementById("text").classList.toggle("highlight");
+}
+
+function showAlert() {
+  alert("Button clicked!");
+  document.getElementById("alertBtn").disabled = true;
+}
+
+let liked = false;
+function likePost() {
+  if (liked) return;
+  liked = true;
+  const btn = document.getElementById("likeBtn");
+  const count = document.getElementById("likeCount");
+  btn.classList.add("liked");
+  count.textContent = parseInt(count.textContent) + 1;
+}
+</script>
+
+</body>
+</html>

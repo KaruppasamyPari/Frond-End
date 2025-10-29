@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Example</title>
+</head>
+<body>
+  <!-- Empty h1 -->
+  <h1 id="title"></h1>
+
+  <!-- Button to trigger JS function -->
+  <button onclick="changeHeading()">Click Me</button>
+
+  <script>
+    // Function called when button is clicked
+    function changeHeading() {
+      // Select h1 by ID
+      let heading = document.getElementById("title");
+
+      // Add text inside h1
+      heading.innerText = "Hello, DOM World!";
+
+      // Apply styles
+      heading.style.color = "blue";            // text color
+      heading.style.backgroundColor = "yellow"; // background color
+      heading.style.fontSize = "40px";         // font size
+      heading.style.textAlign = "center";      // center align
+      heading.style.padding = "10px";          // space around text
+      heading.style.border = "2px solid red";  // border
+      heading.style.borderRadius = "10px";     // rounded corners
+    }
+  </script>
+</body>
+</html>

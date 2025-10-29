@@ -1,0 +1,134 @@
+<!-- 
+
+🌐 **DOM Concept in JavaScript**
+
+## 📖 **Theory (What is DOM?)**
+
+1. **DOM = Document Object Model**
+
+   * When a web page loads, the browser converts the HTML into a **tree-like structure**.
+   * Each element (like `<h1>`, `<p>`, `<div>`, etc.) is a **node** in this tree.
+
+   Example Tree (for a simple HTML):
+
+   ```
+   Document
+   └── html
+       ├── head
+       └── body
+           ├── h1
+           ├── p
+           └── button
+   ```
+
+2. **Why DOM is Important?**
+
+   * It allows **JavaScript to talk with HTML**.
+   * You can **read, change, add, or delete** elements dynamically.
+
+3. **Types of Nodes**
+
+   * **Element Node** → `<h1>`, `<p>`, `<div>`
+   * **Text Node** → The text inside tags
+   * **Attribute Node** → id, class, style, etc.
+
+4. **DOM Methods (to select elements)**
+
+   * `getElementById("id")` → Select by ID
+   * `getElementsByClassName("class")` → Select by class
+   * `getElementsByTagName("tag")` → Select by tag
+   * `querySelector("selector")` → Select first matching element
+   * `querySelectorAll("selector")` → Select all matching elements
+
+5. **DOM Properties (to change content/style)**
+
+   * `innerText` → Changes only text
+   * `innerHTML` → Changes text + HTML tags
+   * `style` → Change CSS properties
+
+6. **DOM Actions**
+
+   * **Create elements** → `createElement()`
+   * **Add elements** → `appendChild()`
+   * **Remove elements** → `remove()`
+   * **Event Handling** → `addEventListener()`
+
+---
+
+## 🛠 **Practical (Examples in HTML + JS)**
+
+Here is a **demo HTML file** you can run: -->
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Theory & Practical</title>
+  <style>
+    body { font-family: Arial, sans-serif; padding: 20px; }
+    #demo { color: blue; }
+    .highlight { background: yellow; font-weight: bold; }
+    button { margin: 5px; padding: 6px 10px; cursor: pointer; }
+  </style>
+</head>
+<body>
+
+  <h1 id="title">DOM Example</h1>
+  <p id="demo">This is a paragraph.</p>
+  <p class="info">Another paragraph with class.</p>
+
+  <button onclick="selectExample()">Select Element</button>
+  <button onclick="changeText()">Change Text</button>
+  <button onclick="changeStyle()">Change Style</button>
+  <button onclick="addElement()">Add Element</button>
+  <button onclick="removeElement()">Remove Element</button>
+  <button id="eventBtn">Click Event</button>
+
+  <script>
+    // 1. Select Element Example
+    function selectExample() {
+      let el = document.getElementById("demo");
+      console.log("Selected Element:", el); // Check in browser console
+      alert("Selected Element Text: " + el.innerText);
+    }
+
+    // 2. Change Text Example
+    function changeText() {
+      document.getElementById("demo").innerText = "Text Changed Successfully!";
+    }
+
+    // 3. Change Style Example
+    function changeStyle() {
+      let el = document.getElementById("demo");
+      el.style.color = "red";
+      el.style.fontSize = "20px";
+      el.classList.add("highlight");
+    }
+
+    // 4. Add New Element Example
+    function addElement() {
+      let newPara = document.createElement("p");
+      newPara.innerText = "I am a new paragraph added dynamically!";
+      document.body.appendChild(newPara);
+    }
+
+    // 5. Remove Element Example
+    function removeElement() {
+      let para = document.querySelector(".info");
+      if (para) {
+        para.remove();
+      } else {
+        alert("No element with class 'info' left!");
+      }
+    }
+
+    // 6. Event Example
+    document.getElementById("eventBtn").addEventListener("click", function() {
+      alert("Event Button Clicked!");
+    });
+  </script>
+
+</body>
+</html>

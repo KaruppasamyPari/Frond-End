@@ -11,6 +11,13 @@ for(let i=0;i<=5;i++){
 }
 
 
+for(let i=0;i<=5;i++){
+    if(i==3) break;{
+        console.log(i)
+    }
+}
+
+
 // === value and datatype the value (strict equality operator)
 // == only value (loose equality operator)
 
@@ -22,3 +29,18 @@ if(x===y){
 else{
     console.log('mismatch of both')  
 }
+
+
+let i = 0;
+while(i<5) {
+    console.log(i); // prints 0 to 4
+    i++;
+}
+
+
+
+let n = 0;
+do {
+    console.log(n); // prints 0 to 4
+    n++;
+} while(n < 5);

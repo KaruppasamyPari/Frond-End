@@ -1,0 +1,48 @@
+body {
+    margin-top: 70px;
+}
+
+body ::before {
+    content: 'XS';
+    color: rebeccapurple;
+    font-size: 30px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    font-weight: bold;
+}
+
+@media (min-width: 576px) {
+    body ::before {
+        content: 'SM';
+        color: orange;
+    }
+}
+
+@media (min-width: 768px) {
+    body ::before {
+        content: 'MD';
+        color: green;
+    }
+}
+
+@media (min-width: 992px) {
+    body ::before {
+        content: 'LG';
+        color: blue;
+    }
+}
+
+@media (min-width: 1200px) {
+    body ::before {
+        content: 'XL';
+        color: red;
+    }
+}
+
+@media (min-width: 1400px) {
+    body ::before {
+        content: 'XXL';
+        color: purple;
+    }
+}
