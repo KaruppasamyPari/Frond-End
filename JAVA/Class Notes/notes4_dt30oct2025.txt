@@ -1,0 +1,246 @@
+programming syntax
+----------------------
+
+import inbuiltpackage;
+
+class classname
+{
+
+  public static void main(String []args)
+   {
+     datatype declarations;
+
+     statement1;
+     statement2;
+     ....
+     statementn;
+
+
+
+
+   }
+
+
+}
+
+
+
+inbuilt package
+---------------------
+
+package : collection of inbuilt classes and interfaces
+
+
+ex:
+---------
+java.io
+java.util
+java.net
+java.lang
+
+
+pure object oriented approach
+-----------------------------------
+
+class classname
+{
+
+
+}
+
+
+
+public - access specifier - main is accessible everywhere
+
+static - unique. no duplicates of main function
+
+void
+
+
+
+int main()
+{
+
+return 100;
+
+}
+
+float main()
+{
+return 10.5;
+}
+
+String main()
+{
+ return "arjun";
+}
+
+void main()
+{
+  ....
+}
+
+
+main () --- keyword which is entry point of the program
+
+
+String []args - command line arguments . 
+
+
+datatype declaration
+
+int         a=100, b=2000
+char        letter='a', '$', '1'
+float       avg=98.3 ... after decimal 6 digits
+Boolean      Boolean result=true;
+String     name = "arjun", password="pass@123"
+double      double value=10.123456789 --- 14 dgts
+
+
+
+if( 100 ) -- error
+{
+
+}
+
+if( true )
+{
+
+}
+
+
+
+variables
+
+
+String first_name ="arjun";
+
+
+rules - variable name
+----------------
+1. it must begin alphabet 
+
+number1=100;   correct
+1number=100; error
+
+
+2. it must not have any spaces
+
+first name="arjun" error
+first_name="arjun" correct
+
+3. special characters are not allowed  except underscore (_)
+
+first-name="abc" error
+first_name="abc"  correct
+
+
+4. must be unique
+
+
+{
+
+int a=100;
+float a=10.5; error. 'a' is already declared
+
+
+}
+
+5. must not be a keyword
+
+int main=123;
+
+
+constant
+-----------------
+
+
+String name="arjun";
+
+String - datatype
+name- variable name
+arjun - constant. string constant
+
+100 - integer constant
+10.5 - float constant
+10.123456789 - double constant
+
+
+'a' - char constant
+"arjun" - string constant
+false, true - Boolean constant
+
+
+o/p statement
+------------------------
+System.out.println(" messages " + variable);
+
+ex1
+----------
+
+System.out.println(" arjun ");
+
+
+ex2
+-----
+int a=100;
+System.out.println(" value is " + a);  //value is 100
+
++ - concatenation operator
+
+
+ex3
+---------
+int a=100;
+float b=10.5;
+System.out.println("  a = " + a + " b = " + b);
+
+
+import java.io.*;
+
+
+class sample1
+{
+
+  public static void main(String []args)
+   {
+ 
+     int a=100, b=200;
+     int c=a+b;
+     System.out.println(" result is " + c);
+
+   }
+
+}
+
+
+
+
+
+	int a = sc.nextInt();
+        String b = sc.next();
+        float c = sc.nextFloat();
+        double d = sc.nextDouble();
+        boolean e = sc.nextBoolean();
+        char f = sc.next().charAt(0);
+
+
+	
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

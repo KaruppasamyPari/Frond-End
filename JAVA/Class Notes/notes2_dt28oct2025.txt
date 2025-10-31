@@ -1,0 +1,60 @@
+programming language
+----------------------------
+ it is the toll to communicate with the system
+
+program
+--------------
+ set of instructions or set of statements
+
+software
+--------------
+ the effective level of a program or set of programs 
+
+
+compiler
+---------------
+ it is the special program which convert source code into machine code. this process is compilation
+
+interpreter
+--------------
+ same as compiler but it does line by line conversion
+
+
+
+c#.net compiler based language ====      intermediate file
+-----------------------------------------
+Console.WriteLine("one"); - 1 sec
+Console.WriteLine("two"); - 2 sec
+Console.WriteLine("three"); - 3 sec
+Console.WriteLine("four"); - 4 sec
+...
+..
+Console.WriteLine("ten"); -- 10 sec
+
+one
+two
+...
+ten
+
+
+core java - interpreter based language
+-------------------------
+
+
+System.out.println("one"); - 1 sec - one
+System.out.println("two"); - 2 sec - two
+System.out.println("three"); - 3 sec - three
+System.out.println("four"); - 4 sec - four
+...
+...
+System.out.println("ten"); - 10 sec - ten
+
+
+
+
+java code conversion
+---------------------------
+           [java compiler]                        jit justintime
+                javac                       java
+sample1.java -----------> sample1.class  -------------> machine code
+

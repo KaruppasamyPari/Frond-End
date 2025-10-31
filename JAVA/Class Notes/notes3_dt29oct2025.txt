@@ -1,0 +1,80 @@
+
+**1. Number & Series Logic**
+
+1. Find the next number in the series:
+   `2, 6, 12, 20, 30, ?`
+   *(Hint: Look for difference patterns)*
+
+2. A number is multiplied by 3, then 12 is added, and the result is divided by 6. If the final result is 10, what was the original number?
+
+3. A number is such that twice the square of it is equal to 128. Find the number.
+
+---
+
+**2. Ratio, Proportion & Percent Logic**
+
+4. The ratio of boys to girls in a class is 3:5. If 6 more boys join and 4 girls leave, the ratio becomes 2:3. Find the original number of boys and girls.
+
+5. A and B can complete a task in 12 days and 18 days respectively. If they work together for 4 days, how much of the work remains?
+
+---
+
+**4. Condition-Based Reasoning**
+
+6. A person moves 5 km north, 3 km east, 2 km south, and 3 km west. How far is he from the starting point?
+
+7. A clock shows 3:15. What is the angle between the hour hand and the minute hand?
+
+
+
+
+Answer:
+
+
+1)  2,6,12,20,30,42;          3) 2x^2 = 128;
+                                 x^2 = 64;
+2)  3x+12/6=10;                  x= 8 
+    3x+12=60
+    3x=48;
+    x=16;
+
+4)  3x+6/5x-4=2/3
+    9x+18 = 10x-8
+    10x-9x=18+8
+    x=26
+
+   boys= 3x= 78
+   girls= 5x = 130
+
+5) 12 days and 18 days
+   
+   one day
+   
+   1/12 + 1/18 = 5/36
+   
+   4 days
+  
+   4 * 5/36 = 5/9   --  its complete works 
+
+   pending works
+
+  1- 5/9  =  4/9
+
+
+6)  
+
+
+       3
+   *-------*
+   |       |    
+ 5 |-------| 2         answer= 3
+   |
+   *
+
+7)  | (30 * h) - (11/2 * m) |
+    | 30 * 3 - 11 * 7.5 |
+    |90 - 82.5 |
+    | 7.5 |    
+
+
+ 
